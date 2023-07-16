@@ -10,7 +10,7 @@ Fariq
 Faiz
 Haziq
 
-Please download the .sql file from SQL folder and run it as script in Visual Studio to display the database.
+Please download the .sql file from SQL folder and run it as script in Visual Studio.
 
 **PHASE 1**
 1. 3 Tier Architecture - DAL, BLL, PL
