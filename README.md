@@ -1,7 +1,7 @@
 # SCSJ3323-SDA-Team3_UTMCS-master
 
 SCSJ/SECJ 3323 Software Design and Architecture Project: 
-Team 8 - Year 22/23  Semester II
+Team 3 - Year 22/23  Semester II
 
 Team Member:
 Akmal
