@@ -2158,6 +2158,8 @@
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="SQL Folder\CREATE TABLE [dbo].[UserDB]-Appointment.txt" />
+    <Content Include="SQL Folder\CREATE TABLE [dbo].[UserDB].txt" />
     <Content Include="StyleSheet\LoginPage_style.css" />
     <Content Include="StyleSheet\MasterPage_style.css" />
     <Content Include="StyleSheet\ProfilePage_style.css" />

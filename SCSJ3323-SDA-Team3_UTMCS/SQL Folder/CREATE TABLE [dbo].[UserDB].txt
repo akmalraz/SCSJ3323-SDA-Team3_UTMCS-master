@@ -1,0 +1,10 @@
+CREATE TABLE [dbo].[UserDB] (
+    [matrix_id]    NVARCHAR (50) NOT NULL,
+    [password]     NVARCHAR (50) NOT NULL,
+    [email]        NVARCHAR (50) NOT NULL,
+    [name]         NVARCHAR (50) NOT NULL,
+    [phoneNumber]  NUMERIC (18)  NULL,
+    [memberStatus] NVARCHAR (50) NULL,
+    [role]         NVARCHAR (50) NULL,
+    [profilePic]   NVARCHAR (50) NULL
+);

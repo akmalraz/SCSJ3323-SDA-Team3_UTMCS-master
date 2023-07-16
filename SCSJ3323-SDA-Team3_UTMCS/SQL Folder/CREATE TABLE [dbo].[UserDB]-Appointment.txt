@@ -1,0 +1,8 @@
+CREATE TABLE [dbo].[AppointmentDB] (
+    [AppoitmentID] NVARCHAR (50) NULL,
+    [matrix_id]    NVARCHAR (50) NOT NULL,
+    [TestID]       NVARCHAR (50) NOT NULL,
+    [Date]         NVARCHAR (50) NOT NULL,
+    [Time]         NVARCHAR (50) NULL,
+    [Status]       NVARCHAR (50) NOT NULL
+);
