@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="SCSJ3323_SDA_Team3_UTMCS.MasterPage" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>My Website</title>
+    <!--bootstrap css-->
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <!--datatables css-->
+    <link href="//cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <!--fontawesome css-->
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+
+    <!--popper/bootstrap js-->
+    <script src="Scripts/bootstrap.bundle.min.js"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+        crossorigin="anonymous">
+    </script>
+    <script src="//cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+        .col-md-3 img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 60px;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="container-fluid">
+        <% if (Session["LoggedInUser"] != null)
+            { %>
+        <form id="form1" runat="server">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="HomePage.aspx">Home</a>
+                <div class="navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <span class="navbar-text">Welcome, <%= Session["LoggedInUser"].ToString() %>!
+                            </span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="LogoutPage.aspx">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="row">
+                <div class="col-md-3">
+                    <asp:Image ID="imgProfilePic" runat="server" Width="150px" Height="150px" CssClass="form-control" />
+                    <asp:HiddenField ID="hdnProfilePicPath" runat="server" />
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="ProfilePage.aspx">Profile</a></li>
+                        <% if (Session["role"].ToString() == "User")
+                            { %>
+                        <li class="list-group-item"><a href="AppointmentPage.aspx">Appointment</a></li>
+                        <li class="list-group-item"><a href="ReportPage.aspx">Report</a></li>
+                        <% } %>
+                        <% if (Session["role"].ToString() == "Admin")
+                            { %>
+                        <li class="list-group-item"><a href="ManageuserPage.aspx">Manage User</a></li>
+                        <% } %>
+                    </ul>
+                </div>
+                <div class="col-md-9">
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </form>
+        <% }
+            else
+            {
+                Response.Redirect("LoginPage.aspx");
+            } %>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+h3 {
+    text-align: center;
+}
+
+.container {
+    max-width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2, h1 {
+    text-align: center;
+    color: maroon;
+}
+
+.form-group {
+    margin-bottom: 5%;
+}
+
+.label {
+    display: block;
+    margin-bottom: 2%;
+    color: grey;
+}
+
+.form-control {
+    width: 96%;
+    padding: 2%;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.btn {
+    width: 100%;
+    padding: 2%;
+    background-color: maroon;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 2%;
+    color: grey;
+}
+
+    .register-link a {
+        color: maroon;
+        text-decoration: none;
+    }
+
+

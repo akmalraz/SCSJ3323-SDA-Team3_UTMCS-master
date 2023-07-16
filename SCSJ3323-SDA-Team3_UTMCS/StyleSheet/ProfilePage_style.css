@@ -1,0 +1,64 @@
+﻿/* main.css */
+
+/* Body styles */
+body {
+    background-color: #f7f7f7;
+    color: #333333;
+}
+
+/* Header styles */
+.header {
+    background-color: #663300;
+    color: #ffffff;
+    padding: 10px;
+}
+
+/* Content styles */
+.content {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+/* Form styles */
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-field {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #cccccc;
+}
+
+    .form-field:focus {
+        outline: none;
+        border-color: #663300;
+    }
+
+.btn {
+    background-color: #663300;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+    .btn:hover {
+        background-color: #996633;
+    }
+
+/* Custom Styles */
+.marron {
+    color: #663300;
+}
+
+.grey {
+    color: #808080;
+}
+
+.text-left {
+    text-align: left;
+}
